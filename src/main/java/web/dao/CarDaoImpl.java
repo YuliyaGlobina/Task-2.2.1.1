@@ -22,7 +22,7 @@ public class CarDaoImpl implements CarDao {
     }
     @Override
     public List<Car> getCountCars(int count) {
-        if ((count >=5) || (count < 0)) {
+        if (count == 0) {
             return cars;
         } else {
             return cars.stream().limit(count).collect(Collectors.toList());

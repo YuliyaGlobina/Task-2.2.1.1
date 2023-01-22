@@ -25,9 +25,9 @@ public class HelloController {
 		model.addAttribute("messages", messages);
 		return "index";
 	}
-	@RequestMapping(value = "/cars", method = {RequestMethod.GET, RequestMethod.POST})
-	public String printCars(@RequestParam(defaultValue = "5") int count, Model model){
-		model.addAttribute("cars", carDao.getCountCars(count));
-		return "cars";
-	}
+//	@RequestMapping(value = "/cars", method = {RequestMethod.GET, RequestMethod.POST})
+//	public String printCars(@RequestParam(defaultValue = "5") int count, Model model){
+//		model.addAttribute("cars", carDao.getCountCars(count));
+//		return "cars";
+//	}
 }
